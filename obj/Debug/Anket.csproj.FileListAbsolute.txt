@@ -1,0 +1,12 @@
+C:\Users\Haci\source\repos\Anket\Anket\bin\Debug\Anket.exe.config
+C:\Users\Haci\source\repos\Anket\Anket\bin\Debug\Anket.exe
+C:\Users\Haci\source\repos\Anket\Anket\bin\Debug\Anket.pdb
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.csprojAssemblyReference.cache
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.Form1.resources
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.Properties.Resources.resources
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.csproj.GenerateResource.cache
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.exe
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.pdb
+C:\Users\Haci\source\repos\Anket\Anket\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Haci\source\repos\Anket\Anket\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Haci\source\repos\Anket\Anket\obj\Debug\Anket.csproj.CopyComplete
