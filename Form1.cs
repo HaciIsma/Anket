@@ -8,10 +8,17 @@ namespace Anket
 {
     public partial class Form1 : Form
     {
-        List<User> users = new List<User>();
+        List<User> users = null;
         private delegate void UserAddSystem(User user);
+        string path = $@"{Directory.GetCurrentDirectory()}\JsonFile\File.json";
         public Form1()
         {
+            string str = File.ReadAllText(path);
+            users = JsonConvert.DeserializeObject<List<User>>(str);
+            if (users == null)
+            {
+                users = new List<User>();
+            }
             InitializeComponent();
         }
 
@@ -45,14 +52,14 @@ namespace Anket
         private void JsonSerialization(User user)
         {
             string jsonString = JsonConvert.SerializeObject(user);
-            string path = $@"{Directory.GetCurrentDirectory()}\JsonFile\File.json";
             File.AppendAllText(path, jsonString);
         }
+
+
         private void comboBoxAdd(User user)
         {
             comboBox1.Items.Add((object)user);
         }
-
         private void comboBoxSetUser(User user)
         {
             nameBox.Text = user.Name;
@@ -66,16 +73,16 @@ namespace Anket
             {
                 radioButton1.Checked = true;
             }
-            else if(user.Gender=="Female")
+            else if (user.Gender == "Female")
             {
                 radioButton2.Checked = true;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             User user = (User)comboBox1.SelectedItem;
             comboBoxSetUser(user);
         }
+
     }
 }
