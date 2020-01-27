@@ -36,7 +36,7 @@ namespace Anket
             {
                 user.Gender = "Male";
             }
-            else
+            else if (radioButton2.Checked == true)
             {
                 user.Gender = "Female";
             }
@@ -66,15 +66,16 @@ namespace Anket
             {
                 radioButton1.Checked = true;
             }
-            else
+            else if(user.Gender=="Female")
             {
                 radioButton2.Checked = true;
             }
         }
 
-        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            User user = (User)comboBox1.SelectedItem;
+            comboBoxSetUser(user);
         }
     }
 }
